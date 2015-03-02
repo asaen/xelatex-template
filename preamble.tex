@@ -1,0 +1,30 @@
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{csquotes}
+
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+
+\sloppy
+\hyphenpenalty=10000
+
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguages{english, german}
+
+\usepackage[%
+            backend=biber,
+            bibstyle=numeric,
+            language=auto,
+            babel=other,
+            sorting=ntvy,
+            doi=false,
+            eprint=false,
+            isbn=false,
+            dashed=false
+            ]{biblatex}
+\addbibresource{document.bib}
+\endinput
